@@ -35,8 +35,15 @@
     </div>
         <!-- ここから2カラム[右] -->
         <div class="column-right">   
+    
              <table id="list2"></table>       
-        </div>
+       </div>
+
+       <div id="star">
+
+       </div>
+
+
 
 <!-- <td>の文字列を取得する -->
 
@@ -50,7 +57,8 @@
 
 <!-- ここにscriptタグを移動 -->
 <script>
-        
+    //星画像を定義
+     let starimg = '<img src="img/star_150_150.png" alt="">'   
     //1.Save クリックイベント
     
     //saveのボタンが押されたら実行したい
@@ -77,8 +85,9 @@
     
         $("#list").append(html);
         console.log(html);
-        $("#list2").append(html);
+        $("#list2").append(starimg);
         console.log(html);
+        //$("#star").append(starimg);
 
 
         
@@ -92,6 +101,8 @@
     $("#clear").on("click",function(){
         localStorage.clear();  //これだけだとlocalstrageしか消えない
         $("#list").empty();     //htmlも抹消する
+        $("#list2").empty();
+        $("#star").empty();
     });
     
     
@@ -113,11 +124,17 @@
     //getItemで取って来たものを画面上に埋め込み
     $("#list").append(html);
     console.log(html);
-    $("#list2").append(html);
+    $("#list2").append(starimg);
     console.log(html);
+    //let starimg = '<img src="img/star_150_150.png" alt="">'
+    //$("#star").append();
+
     }
     
-
+    
 </script>
+
+
+
 </body>
 </html>
