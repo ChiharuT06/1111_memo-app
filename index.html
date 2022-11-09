@@ -6,9 +6,11 @@
 <script src="js/jquery-2.1.3.min.js"></script>
 <script src="js/test.js"></script>
 <link rel="stylesheet" href="css/sample.css">
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Oooh+Baby&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Klee+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="title">
 
         <h1> It is only with the heart that one can see rightly. 
     
@@ -36,7 +38,7 @@
         <!-- ここから2カラム[右] -->
         <div class="column-right">   
     
-             <table id="list2"></table>       
+             <div id="list2"></div>       
        </div>
 
        <div id="star">
@@ -85,16 +87,12 @@
     
         $("#list").append(html);
         console.log(html);
-        $("#list2").append(starimg);
-        console.log(html);
-        //$("#star").append(starimg);
-
+        $("#list2").append(starimg).hide().fadeIn(1000);
+;
 
         
-        
+    
     });
-    
-    
     
     //2.clear クリックイベント
     

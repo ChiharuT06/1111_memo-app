@@ -1,7 +1,15 @@
 body{
 
     font-size: 32px;
+    font-family: 'Oooh Baby', cursive;
     
+}
+
+.title{
+
+    margin-bottom: 5%;
+    margin-top: 5%;
+
 }
 
 .column-all{
@@ -10,13 +18,16 @@ body{
 }
 
 header{
+
     background-color: #fff;
-    border-bottom: 1px solid #ccc;
     text-align: center;
+   
+
 }
 
 .column-left{
 width: 50%;
+font-family: 'Klee One', cursive;
 }
 
 
@@ -57,7 +68,7 @@ li{
     background-color: #fff;
     display:table-cell;  /* 定義 */
     cursor: pointer;
-    color:#0d7dfd;
+    color:black;
 }
 li:hover{
     background: #0d7dfd;
@@ -75,20 +86,20 @@ textarea{
     margin:0 3%;
     width: 95%;
     font-size:80%;
-    background-color: #e1efff;
+    background-color: #bdb76b;
     box-shadow: 3px 3px 3px 3px #555;
 }
 table{
     margin: 20px 3%;
-    border:1px solid #8dc3f5;
+    border:1px solid #bdb76b;
     width:96%;
     
 }
 th{
     width:30%;
     font-size:24px;
-    background-color:#d0e7fc;
-    border-bottom: 1px solid #8dc3f5;
+    background-color:#bdb76b;
+    border-bottom: 1px solid #bdb76b;
 }
 td{
     font-size:16px;
@@ -98,5 +109,6 @@ td{
 
 .column-right{
     width: 50%;
-    border: 10px inset #31A9EE;
+    border: 10px inset #bdb76b;
+    background-color: #191970;
 }
