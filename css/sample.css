@@ -112,3 +112,7 @@ td{
     border: 10px inset #bdb76b;
     background-color: #191970;
 }
+
+#video-area{
+    z-index: -1;
+}
